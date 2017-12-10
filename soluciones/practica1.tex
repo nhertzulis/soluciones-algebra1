@@ -1,1 +1,61 @@
-Hola
+\section*{Práctica 1 - Conjuntos, Relaciones y Funciones}
+
+\subsection*{Conjuntos}
+
+\begin{enumerate}
+\item % Ejercicio 1
+  \begin{multicols}{2}
+  \begin{enumerate}
+  \item $1 \in A$ Verdadero.
+  \item $\{1\} \subseteq A$ Verdadero.
+  \item $\{2, 1\} \subseteq A$ Verdadero.
+  \item $\{1, 3\} \in A$ Falso.
+  \item $\{2\} \in A$ Falso.
+  \end{enumerate}
+  \end{multicols}
+\item % Ejercicio 2
+  \begin{multicols}{2}
+  \begin{enumerate}
+  \item $3 \in A$ Falso.
+  \item $\{3\} \subseteq A$ Falso.
+  \item $\{3\} \in A$ Verdadero.
+  \item $\{\{3\}\} \subseteq A$ Verdadero.
+  \item $\{1, 2\} \in A$ Verdadero.
+  \item $\{1, 2\} \subseteq A$ Falso.
+  \item $\{\{1, 2\}\} \subseteq A$ Verdadero.
+  \item $\{\{1, 2\}, 3\}\subseteq A$ Falso.
+  \item $\emptyset \in A$ Falso.
+  \item $\emptyset \subseteq A$ Verdadero.
+  \item $A \in A$ Falso.
+  \item $A \subseteq A$ Verdadero.
+  \end{enumerate}
+  \end{multicols}
+\item % Ejercicio 3
+  \begin{multicols}{2}
+  \begin{enumerate}
+  \item $A \subseteq B$ pues $1 \in B$, $2 \in B$ y $3 \in B$.
+  \item $A \not\subseteq B$ pues $3 \in A$ pero $3 \notin B$.
+  \item $A \not\subseteq B$ pues $\frac{5}{2} \in A$ pero $\frac{5}{2} \notin B$.
+  \item $A \not\subseteq B$ pues $\emptyset \in A$ pero $\emptyset \notin B$.
+  \end{enumerate}
+  \end{multicols}
+\item % Ejercicio 4
+  \begin{itemize}
+  \item $A \cap B = \{3, 7, 11\}$
+  \item $A \cup B = \{-1,1,3,-5,5,7,-8,8,11\}$
+  \item $B - A = \{-1,-5,-8\}$
+  \item $A \bigtriangleup B = \{-1,1,-5,5,-8,8\}$
+  \end{itemize}
+\item % Ejercicio 5
+  \begin{enumerate}
+  \item $B \cap C = \emptyset$\newline Por lo tanto, $B \bigtriangleup C = B \cup C = \{1,\{3\},10,-2,\{1,2,3\},3\}$\newline Luego, $A \cap (B \bigtriangleup C)$ es igual a\newline \indent$\{1,-2,7,3\} \cap \{1,\{3\},10,-2,\{1,2,3\},3\} = \{1,-2,3\}$
+
+  \item $A \cap B = \{1\}$\newline $A \cap C = \{-2,3\}$\newline $\therefore (A \cap B) \bigtriangleup (A \cap C) = \{1\} \bigtriangleup \{-2,3\} = \{1,-2,3\}$
+
+  \item $A^c = V - A = \{\{3\},10,\{1,2,3\}\}$\newline
+  $B^c = \{-2,7,\{1,2,3\},3\}$\newline
+  $C^c = \{1,\{3\},7,10\}$\newline
+  $\therefore A^c \cap B^c \cap C^c = \emptyset$
+
+  \end{enumerate}
+\end{enumerate}
