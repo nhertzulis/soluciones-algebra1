@@ -40,12 +40,14 @@
   \end{enumerate}
   \end{multicols}
 \item % Ejercicio 4
+  \begin{multicols}{2}
   \begin{itemize}
   \item $A \cap B = \{3, 7, 11\}$
   \item $A \cup B = \{-1,1,3,-5,5,7,-8,8,11\}$
   \item $B - A = \{-1,-5,-8\}$
   \item $A \bigtriangleup B = \{-1,1,-5,5,-8,8\}$
   \end{itemize}
+  \end{multicols}
 \item % Ejercicio 5
   \begin{enumerate}
   \item $B \cap C = \emptyset$\newline Por lo tanto, $B \bigtriangleup C = B \cup C = \{1,\{3\},10,-2,\{1,2,3\},3\}$\newline Luego, $A \cap (B \bigtriangleup C)$ es igual a\newline \indent$\{1,-2,7,3\} \cap \{1,\{3\},10,-2,\{1,2,3\},3\} = \{1,-2,3\}$
@@ -56,6 +58,158 @@
   $B^c = \{-2,7,\{1,2,3\},3\}$\newline
   $C^c = \{1,\{3\},7,10\}$\newline
   $\therefore A^c \cap B^c \cap C^c = \emptyset$
-
   \end{enumerate}
+\item % Ejercicio 6
+  Por la Ley de De Morgan:
+  \begin{multicols}{2}
+  \begin{itemize}
+  \item $(A \cup B \cup C)^c = A^c \cap B^c \cap C^c$
+  \item $(A \cap B \cap C)^c = A^c \cup B^c \cup C^c$
+  \end{itemize}
+  \end{multicols}
+\item % Ejercicio 7
+  Acá debería mostrar diagramas de Venn. Cuando tenga tiempo voy a buscar algún paquete de LaTeX para hacerlos.
+\item % Ejercicio 8
+  La idea de este ejercicio es buscar formas de expresar la resta de conjuntos y la diferencia simétrica utilizando uniones, intersecciones y complementos.
+  \begin{multicols}{2}
+  \begin{enumerate}
+  \item $(A \cap B^c) \cup (B \cap C \cap A^c)$
+  \item $(A \cup C) \cap (A \cap C)^c \cap B^c$
+  \item $((A \cap B) \cup (B \cap C) \cup (C \cap A)) \cap (A \cap B \cap C)^c$
+  \end{enumerate}
+  \end{multicols}
+\item % Ejercicio 9
+  \begin{enumerate}
+  \item $\{\emptyset,\{1\}\}$
+  \item $\{\emptyset,\{a\},\{b\},\{a,b\}\}$
+  \item $\{\emptyset,\{1\},\{\{1,2\}\},\{1,\{1,2\}\}\}$
+  \item $\{\emptyset,\{a\},\{b\},\{c\},\{a,b\},\{a,c\},\{b,c\},\{a,b,c\}\}$
+  \item $\{\emptyset,\{1\},\{a\},\{\{-1\}\},\{1,a\},\{1,\{-1\}\},\{a,\{-1\}\},\{1,a,\{-1\}\}\}$
+  \item $\{\emptyset\}$
+  \end{enumerate}
+\item % Ejercicio 10
+  Para probar que $P(A) \subseteq P(B) \Leftrightarrow A \subseteq B$ hay que probar que $P(A) \subseteq P(B) \Rightarrow A \subseteq B$ y que $P(A) \subseteq P(B) \Leftarrow A \subseteq B$. Es decir, hay que probar la implicación para los dos lados.
+  \begin{itemize}
+  \item $P(A) \subseteq P(B) \Rightarrow A \subseteq B$:\newline
+  Demostración por el absurdo. Supongamos que $A \not\subseteq B$. Entonces existe $a \in A$ que no pertenece a B. Esto es equivalente a decir que $\{a\} \subseteq A$ pero $\{a\} \not\subseteq B$ (por definición de conjunto de partes). ¡Absurdo! Pues esta afirmación contradice a $P(A) \subseteq P(B)$. Luego, $P(A) \subseteq P(B) \Rightarrow A \subseteq B$.
+
+  \item $A \subseteq B \Rightarrow P(A) \subseteq P(B)$:\newline
+  Demostración por el absurdo. Supongamos que $P(A) \not\subseteq P(B)$. Entonces existe $a \in P(A)$ que no pertenece a $P(B)$. Esto es equivalente a decir que $a \subseteq A$ pero $a \not\subseteq B$ (por definición de conjunto de partes). ¡Absurdo! Pues esta afirmación contradice a $P(A) \not\subseteq P(B)$.
+  \end{itemize}
+  Acabamos de probar que $P(A) \subseteq P(B) \Leftrightarrow A \subseteq B$.
+\item % Ejercicio 11
+  Pendiente de completar.
+\item % Ejercicio 12
+  Sean los conjuntos\newline
+  $A = \{\textnormal{``Argentinos"}\}$\newline
+  $E = \{\textnormal{``Estudiantes de matemática de la facultad"}\}$\newline
+  $M = \{\textnormal{``Materos, personas que toman mate"}\}$\newline
+  Sabemos que
+  \begin{itemize}
+  \item $E \not\subseteq A$ (hay estudiantes extranjeros).
+  \item $(M-A) \cap E = \emptyset$ (no hay materos extranjeros en la facultad).
+  \end{itemize}
+  ¿Estas premisas implican que $E \not\subseteq M$ (hay estudiantes que no toman mate)?\newline
+  Sí, los estudiantes extranjeros no toman mate.\newline
+  $E \not\subseteq A$ implica que existe una persona $p$ tal que $p \in E$ y $p \notin A$. Luego, $p \notin (M-A)$ pues $(M-A) \cap E = \emptyset$. Sabemos que $p \notin (M-A)$ y $p \notin A$. Entonces, $p \notin M$. Es decir, $p \in E$ pero $p \notin M$. Esto dice que $E \not\subseteq M$.
+\end{enumerate}
+
+\subsection*{Relaciones}
+
+\begin{enumerate}
+\setcounter{enumi}{17}
+
+\item % Ejercicio 18 
+  Dados dos conjuntos $A$ y $B$, un conjunto $R$ es una relación de $A$ en $B$ sii $R \in P(A \times B)$ o, equivalentemente, $R \subseteq A \times B$.
+  \begin{multicols}{3}
+  \begin{enumerate}
+  \item Sí.
+  \item No, pues $(3,2) \notin A \times B$.
+  \item Sí.
+  \item Sí.
+  \item Sí.
+  \item Sí.
+  \item Sí.
+  \item Sí.
+  \end{enumerate}
+  \end{multicols}
+\item % Ejercicio 19
+  Pendiente de completar.
+\item % Ejercicio 20
+  Dado un conjunto $A$, una relación $R$ de $A$ en $A$ (una relación en $A$) es
+  \begin{itemize}
+  \item Reflexiva sii $(\forall a \in A) a R a$.
+  \item Simétrica sii $(\forall a,b \in A) (a R b \Rightarrow b R a)$.
+  \item Transitiva sii $(\forall a,b,c \in A) ((a R b \wedge b R c) \Rightarrow a R c)$.
+  \item Antisimétrica sii $(\forall a,b \in A) ((aRb \wedge bRa) \Rightarrow a = b)$\newline
+  o, equivalentemente, $(\forall a,b \in A, a \neq b) ((a,b) \in R \Rightarrow (b,a) \notin R)$.
+  \end{itemize}
+  \begin{enumerate}
+  \item
+    \begin{itemize}
+      \item No reflexiva pues $(a,a) \notin R$.
+      \item No simétrica pues $(h,g) \in R$ pero $(g,h) \notin R$.
+      \item No transitiva pues $e R c$ y $c R h$ pero $(e,h) \notin R$.
+      \item No antisimétrica pues $a R b$ y $b R a$.
+    \end{itemize}
+  \item
+    \begin{itemize}
+      \item Reflexiva.
+      \item No simétrica pues $(h,g) \in R$ pero $(g,h) \notin R$.
+      \item No transitiva pues $c R h$ y $h R g$ pero $(c,g) \notin R$.
+      \item No antisimétrica pues $a R b$ y $b R a$.
+    \end{itemize}
+  \item
+    \begin{itemize}
+      \item No reflexiva pues $(d,d) \notin R$.
+      \item No simétrica pues $(h,g) \in R$ pero $(g,h) \notin R$.
+      \item Transitiva.
+      \item No antisimétrica pues $a R b$ y $b R a$.
+    \end{itemize}
+  \item
+    \begin{itemize}
+      \item Reflexiva.
+      \item Simétrica.
+      \item Transitiva.
+      \item No antisimétrica pues $a R b$ y $b R a$.
+    \end{itemize}
+  \end{enumerate}
+\item % Ejercicio 21
+  Pendiente de completar.
+\item % Ejercicio 22
+  Pendiente de completar.
+\item % Ejercicio 23
+  Decimos que una relación es
+  \begin{itemize}
+  \item una relación de equivalencia sii es reflexiva, simétrica y transitiva.
+  \item una relación de orden sii es reflexiva, antisimétrica y transitiva.
+  \end{itemize}
+  \begin{enumerate}
+  \item Reflexiva, simétrica, transitiva, antisimétrica. Relación de orden y de equivalencia.
+  \item No reflexiva, simétrica, transitiva, antisimétrica.
+  \item Reflexiva, no simétrica, transitiva, antisimétrica. Relación de orden.
+  \item Reflexiva, simétrica, transitiva, no antisimétrica. Relación de equivalencia.
+  \item Reflexiva, no simétrica, transitiva, antisimétrica. Relación de orden.
+  \item Reflexiva, no simétrica, transitiva, antisimétrica. Relación de orden.
+  \item Reflexiva, no simétrica, transitiva y antisimétrica porque está definida con el operador $\subseteq$. Relación de orden.
+  \end{enumerate}
+\item % Ejercicio 24
+  \begin{enumerate}
+  \item Dado un conjunto $A$ y una relación $R$ en $A$
+    \begin{itemize}
+      \item Si $R = \emptyset$ entonces es simétrica y antisimétrica.
+      \item Si $R$ es la relación de igualdad (o sea, la relación en $A$ solo reflexiva), también es simétrica y antisimétrica.
+      \item Si a la relación de igualdad le quitamos algunos elementos, sigue siendo simétrica y antisimétrica.
+    \end{itemize}
+    Entonces, una relación $R$ en $A$ es simétrica y antisimétrica sii $R \subseteq \{(a,a) : a \in A\}$.
+  \item Para ser una relación de equivalencia y de orden, además de ser simétrica y antisimétrica debe ser reflexiva y transitiva. La relación de igualdad es la única que es simétrica, antisimétrica y reflexiva. Además, también es transitiva. Luego, la única relación de equivalencia y de orden es la relación de igualdad.
+  \end{enumerate}
+  Una relación puede no ser simétrica ni antisimétrica. Por ejemplo, la relación del ejercicio 20. i).
+\item % Ejercicio 25
+  Sea $R$ una relación de equivalencia en el conjunto $A$ y sea $a \in A$. La clase de equivalencia de $a$ es el conjunto de elementos de $A$ que se relacionan con él y la notamos $\overline{a}$. Es decir, $\overline{a} = \{b : b \in A, b R a\}$\newline
+  La partición asociada a $R$ es el conjunto de clases de equivalencia. Notar que dos elementos $x, y \in A$ pueden tener la misma clase de equivalencia, o sea $\overline{x} = \overline{y}$. En ese caso solo escribimos uno de los dos al describir la partición por extensión para que sea lo más corta posible.\newline
+  No voy a escribir las clases de equivalencia y la partición de este ejercicio porque es muy tedioso.
+\item % Ejercicio 26
+  El primer ítem nos dice que podemos separar los números naturales según su último dígito. Es decir, la partición de $R$ es $\{\overline{0}, \overline{1}, \overline{2}\ldots\ \overline{9}\}$.\newline
+  Pero como $(1,2) \in R$ y es una relación de equivalencia, entonces $\overline{1} = \overline{2}$. Siguiendo el mismo razonamiento, 
 \end{enumerate}
