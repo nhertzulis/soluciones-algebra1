@@ -211,5 +211,35 @@
   No voy a escribir las clases de equivalencia y la partición de este ejercicio porque es muy tedioso.
 \item % Ejercicio 26
   El primer ítem nos dice que podemos separar los números naturales según su último dígito. Es decir, la partición de $R$ es $\{\overline{0}, \overline{1}, \overline{2}\ldots\ \overline{9}\}$.\newline
-  Pero como $(1,2) \in R$ y es una relación de equivalencia, entonces $\overline{1} = \overline{2}$. Siguiendo el mismo razonamiento, 
+  Pero como $(1,2) \in R$ y es una relación de equivalencia, entonces $\overline{1} = \overline{2}$. Siguiendo el mismo razonamiento, $\overline{1} = \overline{2} = \overline{5} = \overline{7}$, $\overline{4} = \overline{6}$, $\overline{3} = \overline{8} = \overline{0}$. La partición de $R$ queda igual a $\{\overline{0},\overline{1},\overline{4},\overline{9}\}$.\newline
+  Por otro lado, el hecho de que $(1,4) \notin R$ nos dice que $\overline{1} \neq \overline{4}$. Siguiendo el mismo razonamiento, obtenemos que $\overline{1} \neq \overline{0}$, $\overline{9} \neq \overline{0}$, $\overline{9} \neq \overline{4}$.\newline
+  Con estas restricciones, lo único que no está determinado es si $\overline{0} = \overline{4}$ y si $\overline{1} = \overline{9}$. Es decir, las posibles particiones de $R$ son:
+    \begin{multicols}{2}
+    \begin{itemize}
+    \item $\{\overline{0},\overline{1},\overline{4},\overline{9}\}$
+    \item $\{\overline{0},\overline{1},\overline{9}\}$ con $\overline{0} = \overline{4}$
+    \item $\{\overline{0},\overline{1},\overline{4}\}$ con $\overline{1} = \overline{9}$
+    \item $\{\overline{0},\overline{1}\}$ con $\overline{0} = \overline{4}$ y $\overline{1} = \overline{9}$
+    \end{itemize}
+    \end{multicols}
+  Dar la partición de una relación es equivalente a definir la relación. Por lo tanto, estas particiones nos dicen que hay 4 relaciones de equivalencia distintas que verifican simultáneamente las propiedades del enunciado.
+\item % Ejercicio 27
+  La relación tiene dos clases de equivalencia, a saber: la clase de equivalencia de los números pares y la de los impares. Vamos a llamar $\overline{0}$ a la clase de equivalencia de los números pares y $\overline{1}$ a la de los impares. Algunos representantes:
+  \begin{multicols}{2}
+  \begin{itemize}
+  \item $0,2,-2,4,-4 \in \overline{0}$
+  \item $1,3,-3,5,-5 \in \overline{1}$
+  \end{itemize}
+  \end{multicols}
+\item % Ejercicio 28
+  Sea $\overline{1}$ la clase de equivalencia de los subconjuntos de un elemento, $\overline{2}$ la clase de equivalencia de los subconjuntos de dos elementos y así siguiendo. Hay una clase de equivalencia para cada número natural. Es decir hay cardinal de $\mathbb{N}$ clases de equivalencia. Los representantes más simples son
+  \begin{multicols}{3}
+  \begin{itemize}
+  \item $\{1\} \in \overline{1}$
+  \item $\{1,2\} \in \overline{2}$
+  \item $\{1,2,3\} \in \overline{3}$
+  \item $\{1,2,3,4\} \in \overline{4}$
+  \item $\{1,2 \ldots\ n\} \in \overline{n}$
+  \end{itemize}
+  \end{multicols} 
 \end{enumerate}
